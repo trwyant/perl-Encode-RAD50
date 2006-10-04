@@ -1,0 +1,14 @@
+Build.PL
+Changes
+eg/cvt
+eg/irad50
+eg/r50asc
+eg/README
+lib/Encode/RAD50.pm
+Makefile.PL
+MANIFEST
+META.yml			Module meta-data (added by MakeMaker)
+README
+t/basic.t
+t/pod.t
+t/pod_coverage.t
