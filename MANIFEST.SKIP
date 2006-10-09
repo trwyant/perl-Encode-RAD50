@@ -2,7 +2,7 @@
 ^blib/
 ^Build$
 ^Changes_Development$
-^CVS
+CVS/
 ^foo$
 ^Makefile$
 ^MANIFEST\.
