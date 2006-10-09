@@ -3,12 +3,13 @@
 ^Build$
 ^Changes_Development$
 CVS/
+^Encode-RAD50-
 ^foo$
 ^Makefile$
 ^MANIFEST\.
 ^pm_to_blib$
-^t/manifest.t$
+^t/manifest\.t$
 \.old$
-^t/pod_spelling.t$
+^t/pod_spelling\.t$
 \.tar\.gz$
 ^TODO$
