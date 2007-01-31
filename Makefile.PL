@@ -17,6 +17,7 @@ WriteMakefile (
 		AUTHOR => 'Tom Wyant (wyant@cpan.org)',
 		ABSTRACT => 'Convert to and from the Rad50 character set',
 ##		BINARY_LOCATION => "$Config{archname}$vers/Encode-RAD50.tar.gz",
+		LICENSE => 'perl',
 		) : (),
 	);
 
