@@ -10,6 +10,7 @@ CVS/
 ^pm_to_blib$
 ^t/manifest\.t$
 \.old$
+\.swp$
 ^t/pod_spelling\.t$
 \.tar\.gz$
 ^TODO$
