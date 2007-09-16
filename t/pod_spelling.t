@@ -1,5 +1,3 @@
-#!/usr/local/bin/perl
-
 use strict;
 use warnings;
 
@@ -13,7 +11,7 @@ BEGIN {
     };
 }
 
-our $VERSION = '0.001';
+our $VERSION = '0.002';
 
 if ($skip) {
     skip ($skip, 1);
