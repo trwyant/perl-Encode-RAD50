@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 
-use File::Temp;
+## use File::Temp;
 use Test;
 
 
@@ -50,7 +50,7 @@ ok ($loaded);
 
 ######################### End of black magic.
 
-my $written;
+my $written = '';
 unless ($skip) {
     open (my $fh, '>', \$written) or $skip = "PerlIO unsupported";
 }
