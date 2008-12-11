@@ -71,7 +71,7 @@ use warnings;
 
 use base qw{Encode::Encoding};
 
-our $VERSION = '0.005';
+our $VERSION = '0.005_01';
 
 use Carp;
 use Encode qw{:fallback_all};
@@ -117,7 +117,7 @@ subroutine exported by Encode.
 
 =cut
 
-sub decode ($$;$) {
+sub decode {
 my ($self, undef, $check) = @_;
 $check ||= 0;
 $check &= $chk_mod;
@@ -158,7 +158,7 @@ subroutine exported by Encode.
 
 =cut
 
-sub encode ($$;$) {
+sub encode {
 my ($self, $string, $check) = @_;
 $check ||= 0;
 $check &= $chk_mod;
