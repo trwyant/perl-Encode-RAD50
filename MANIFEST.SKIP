@@ -11,6 +11,8 @@ CVS/
 ^t/manifest\.t$
 \.old$
 \.swp$
+^t/critic\.t$
+^t/executable\.t$
 ^t/pod_spelling\.t$
 \.tar\.gz$
 ^TODO$
