@@ -1,3 +1,8 @@
+use 5.006;	# for 'our'.
+
+use strict;
+use warnings;
+
 use Config;
 use ExtUtils::MakeMaker;
 
@@ -9,7 +14,7 @@ WriteMakefile (
 	VERSION_FROM => 'lib/Encode/RAD50.pm',
 	PREREQ_PM => {
 			Encode	=> 0,
-			Encode::Encoding => 0,
+			'Encode::Encoding' => 0,
 			},
 	PL_FILES => {},	# Prevent old MakeMaker from running Build.PL
 	'dist' => {COMPRESS => 'gzip', SUFFIX => 'gz'},
