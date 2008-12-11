@@ -3,14 +3,15 @@ use warnings;
 
 my $skip;
 BEGIN {
-    eval "use Test::Spelling";
+    eval {require Test::Spelling};
     $@ and do {
 	print "1..0 # skip Test::Spelling not available.\n";
 	exit;
     };
+    Test::Spelling->import();
 }
 
-our $VERSION = '0.002_01';
+our $VERSION = '0.002_02';
 
 add_stopwords (<DATA>);
 
