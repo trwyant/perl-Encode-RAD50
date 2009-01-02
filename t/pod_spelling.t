@@ -1,7 +1,8 @@
+package main;
+
 use strict;
 use warnings;
 
-my $skip;
 BEGIN {
     eval {require Test::Spelling};
     $@ and do {
@@ -11,11 +12,11 @@ BEGIN {
     Test::Spelling->import();
 }
 
-our $VERSION = '0.002_02';
-
 add_stopwords (<DATA>);
 
 all_pod_files_spelling_ok ();
+
+1;
 __DATA__
 CVT
 IAS
@@ -26,7 +27,6 @@ Nora
 Perlqq
 RAD
 RSTS
-RSX
 RT
 Rad
 Wyant
@@ -36,5 +36,4 @@ darwin
 fallback
 os
 retrocomputing
-supress
 vms
