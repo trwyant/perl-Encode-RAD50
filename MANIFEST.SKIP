@@ -15,4 +15,5 @@ CVS/
 ^t/executable\.t$
 ^t/pod_spelling\.t$
 \.tar\.gz$
+^test_environment$
 ^TODO$
