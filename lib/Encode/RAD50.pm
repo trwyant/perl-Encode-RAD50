@@ -71,7 +71,7 @@ use warnings;
 
 use base qw{Encode::Encoding};
 
-our $VERSION = '0.005_02';
+our $VERSION = '0.005_03';
 
 use Carp;
 use Encode qw{:fallback_all};
@@ -200,7 +200,7 @@ sub encode {		## no critic RequireArgUnpacking
 
 This class method causes Encode::RAD50 to ignore the WARN_ON_ERR
 flag. This is primarily for testing purposes, meaning that I couldn't
-figure out any other way to supress the warnings when testing the
+figure out any other way to suppress the warnings when testing the
 handling of invalid characters in PerlIO.
 
 If the argument is true, warnings are not generated even if the caller
