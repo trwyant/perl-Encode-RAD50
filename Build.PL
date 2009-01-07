@@ -5,9 +5,8 @@ use warnings;
 
 use Module::Build;
 use Config;
-use FileHandle;
 
-our $VERSION = '0.002_02';
+our $VERSION = '0.002_03';
 
 (my $mbv = Module::Build->VERSION) =~ s/_//g;
 
