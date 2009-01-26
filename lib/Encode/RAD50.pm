@@ -71,7 +71,7 @@ use warnings;
 
 use base qw{Encode::Encoding};
 
-our $VERSION = '0.005_03';
+our $VERSION = '0.005_04';
 
 use Carp;
 use Encode qw{:fallback_all};
@@ -122,7 +122,7 @@ subroutine exported by Encode.
 # true. If perlio_ok() is true, SHOULD becomes MUST. Perl::Critic does
 # not want us to do this, so we need to silence it.
 
-sub decode {		## no critic RequireArgUnpacking
+sub decode {		## no critic (RequireArgUnpacking)
     my ($self, undef, $check) = @_;
     $check ||= 0;
     $check &= $chk_mod;
@@ -171,7 +171,7 @@ subroutine exported by Encode.
 # that is not a multiple of 3. But we strip characters from the original
 # argument as well.
 
-sub encode {		## no critic RequireArgUnpacking
+sub encode {		## no critic (RequireArgUnpacking)
     my ($self, $string, $check) = @_;
     $check ||= 0;
     $check &= $chk_mod;
