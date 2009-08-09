@@ -28,6 +28,9 @@ $mbv >= 0.28 and $args{meta_merge} = {
     no_index => {
 	directory => [qw{inc t}],
     },
+    resources => {
+	bugtracker => 'https://rt.cpan.org/Public/Dist/Display.html?Name=Encode-RAD50',
+    },
 };
 
 my $bldr = Module::Build->new(%args);
