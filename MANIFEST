@@ -4,15 +4,17 @@ eg/cvt
 eg/irad50
 eg/r50asc
 eg/README
+inc/My/Module/Build.pm
 lib/Encode/RAD50.pm
 Makefile.PL
 MANIFEST
 META.yml			Module meta-data (added by MakeMaker)
 README
 t/basic.t
-t/critic.t
-t/executable.t
-t/manifest.t
-t/perlcriticrc
-t/pod.t
-t/pod_coverage.t
+xt/critic.t
+xt/perlcriticrc
+xt/executable.t
+xt/manifest.t
+xt/pod.t
+xt/pod_coverage.t
+xt/pod_spelling.t

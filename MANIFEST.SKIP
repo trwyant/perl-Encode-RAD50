@@ -4,7 +4,7 @@
 ^Changes_Development$
 CVS/
 ^Encode-RAD50-
-^foo$
+^foo
 ^Makefile$
 ^MANIFEST\.
 ^meta/
@@ -13,5 +13,4 @@ CVS/
 \.old$
 \.svn/
 \.swp$
-^t/pod_spelling\.t$
 ^TODO$
