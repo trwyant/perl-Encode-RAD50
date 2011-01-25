@@ -5,8 +5,6 @@ use warnings;
 
 use ExtUtils::MakeMaker;
 
-my $vers = '';
-
 (my $mmv = ExtUtils::MakeMaker->VERSION) =~ s/_//g;
 
 my %args = (

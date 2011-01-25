@@ -61,7 +61,7 @@ while (@tests) {
     my $string = shift @tests;
     my $value = shift @tests;
     my $output = $string;
-    my $bytes = length ($string) * 2 / 3;  # assumes $string a multiple of 3.
+##  my $bytes = length ($string) * 2 / 3;  # assumes $string a multiple of 3.
     my $tplt = 'n';		# 16 bits, big-endian. Assumes 3 chars only.
     $output =~ tr/A-Z0-9.$ /?/c;
 
