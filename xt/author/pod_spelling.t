@@ -22,6 +22,7 @@ CVT
 Fortran
 IAS
 IRAD
+merchantability
 MSWin
 Narum
 Nora

@@ -6,9 +6,12 @@ eg/r50asc
 eg/README
 inc/My/Module/Build.pm
 lib/Encode/RAD50.pm
+LICENSES/Artistic
+LICENSES/Copying
 Makefile.PL
 MANIFEST
-META.yml			Module meta-data (added by MakeMaker)
+META.json
+META.yml
 README
 t/basic.t
 xt/author/critic.t
