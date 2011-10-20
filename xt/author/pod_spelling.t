@@ -19,14 +19,17 @@ all_pod_files_spelling_ok ();
 1;
 __DATA__
 CVT
+Fortran
 IAS
 IRAD
 MSWin
 Narum
 Nora
+PDP
 Perlqq
 RAD
 RSTS
+RSX
 RT
 Rad
 Wyant
