@@ -22,12 +22,19 @@ my %args = (
 
 $mmv >= 6.31 and $args{LICENSE} = 'perl';
 
-$mmv >= 6.4501 and $args{META_MERGE} = {
-    resources => {
+if ( $mmv >= 6.4501 ) {
+    $args{META_ADD} = {
+	no_index => {
+	    directory => [ qw{ inc t xt } ],
+	},
+    };
+    $args{META_MERGE} = {
 	bugtracker => 'https://rt.cpan.org/Public/Dist/Display.html?Name=Encode-RAD50',
-	license => 'http://dev.perl.org/licenses/',
-    },
-};
+	resources => {
+	    license => 'http://dev.perl.org/licenses/',
+	},
+    };
+}
 
 WriteMakefile (%args);
 
