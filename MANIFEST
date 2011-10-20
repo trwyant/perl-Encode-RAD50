@@ -5,6 +5,7 @@ eg/irad50
 eg/r50asc
 eg/README
 inc/My/Module/Build.pm
+inc/My/Module/Meta.pm
 lib/Encode/RAD50.pm
 LICENSES/Artistic
 LICENSES/Copying
