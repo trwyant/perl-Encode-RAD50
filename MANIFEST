@@ -11,10 +11,10 @@ MANIFEST
 META.yml			Module meta-data (added by MakeMaker)
 README
 t/basic.t
-xt/critic.t
-xt/perlcriticrc
-xt/executable.t
-xt/manifest.t
-xt/pod.t
-xt/pod_coverage.t
-xt/pod_spelling.t
+xt/author/critic.t
+xt/author/perlcriticrc
+xt/author/executable.t
+xt/author/manifest.t
+xt/author/pod.t
+xt/author/pod_coverage.t
+xt/author/pod_spelling.t
