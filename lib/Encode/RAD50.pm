@@ -81,7 +81,7 @@ use constant RADIX => 40;
 use constant MAX_WORD => RADIX * RADIX * RADIX;
 # use constant CARP_MASK => WARN_ON_ERR | DIE_ON_ERR;
 
-__PACKAGE__->Define ('RAD50', qr{^rad50$}i);
+__PACKAGE__->Define( 'RAD50' );
 
 my @r52asc = split '', ' ABCDEFGHIJKLMNOPQRSTUVWXYZ$.?0123456789';
 my %irad50;
