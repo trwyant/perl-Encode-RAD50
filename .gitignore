@@ -1,0 +1,13 @@
+/blib
+/Build
+/_build
+/cover_db
+/Debian_CPANTS.txt
+/Encode-RAD50*
+/Makefile
+/MANIFEST.bak
+/META.json
+/META.yml
+/MYMETA.json
+/MYMETA.yml
+/nytprof*
