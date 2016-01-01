@@ -29,6 +29,26 @@ sub distribution {
     return $self->{distribution};
 }
 
+sub meta_merge {
+    return {
+	'meta-spec'	=> {
+	    version	=> 2,
+	},
+	no_index	=> {
+	    directory	=> [ qw{ inc t xt } ],
+	},
+	resources	=> {
+	    bugtracker	=> 'https://rt.cpan.org/Public/Dist/Display.html?Name=Encode-RAD50',
+	    license	=> 'http://dev.perl.org/licenses/',
+	    repository	=> {
+		type	=> 'git',
+		url	=> 'git://github.com/trwyant/perl-Encode-RAD50.git',
+		web	=> 'https://github.com/trwyant/perl-Encode-RAD50',
+	    },
+	}
+    };
+}
+
 sub requires {
     my ( $self, @extra ) = @_;
 ##  if ( ! $self->distribution() ) {
@@ -103,6 +123,16 @@ C<< {META_MERGE}->{build_requires} >> or C<BUILD_REQUIRES> key.
 
 This method returns the value of the environment variable
 C<MAKING_MODULE_DISTRIBUTION> at the time the object was instantiated.
+
+=head2 meta_merge
+
+ use YAML;
+ print Dump( $meta->meta_merge() );
+
+This method returns a reference to a hash describing the meta-data which
+has to be provided by making use of the builder's C<meta_merge>
+functionality. This includes the C<dynamic_config>, C<no_index> and
+C<resources> data.
 
 =head2 requires
 
