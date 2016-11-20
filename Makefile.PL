@@ -1,4 +1,4 @@
-use 5.006;	# for 'our'.
+use 5.008;	# for ':encoding(rad50)'.
 
 use strict;
 use warnings;
