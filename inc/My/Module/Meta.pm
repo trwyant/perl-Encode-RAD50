@@ -57,8 +57,8 @@ sub requires {
 ##  if ( ! $self->distribution() ) {
 ##  }
     return +{
-	base			=> 0,
 	constant		=> 0,
+	parent			=> 0,
 	strict			=> 0,
 	warnings		=> 0,
 	'Carp'			=> 0,

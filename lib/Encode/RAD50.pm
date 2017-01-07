@@ -69,7 +69,7 @@ package Encode::RAD50;
 use strict;
 use warnings;
 
-use base qw{Encode::Encoding};
+use parent qw{ Encode::Encoding };
 
 our $VERSION = '0.012';
 
