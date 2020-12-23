@@ -16,4 +16,5 @@ CVS/
 \.old$
 \.svn/
 \.swp$
+^\.travis\.yml$
 ^TODO$
