@@ -227,13 +227,17 @@ __END__
 
 =back
 
-=head1 BUGS
+=head1 SUPPORT
 
 Perlqq, HTML charref, and XML charref fallback modes are not supported,
 because the RAD50 character set does not have the necessary characters.
 In plainer language, you can't stick a backslash in the output stream
 if the backslash is an invalid character. Requests for these fallback
 modes will be ignored, and the replacement character inserted.
+
+Support is by the author. Please file bug reports at
+L<https://github.com/trwyant/perl-Encode-RAD50/issues>, or in electronic
+mail to the author.
 
 =head1 SEE ALSO
 
