@@ -1,4 +1,4 @@
-#!/usr/local/bin/perl
+#!/usr/bin/env perl
 
 use 5.008;
 
@@ -18,12 +18,15 @@ GetOptions( \%opt,
 ) or pod2usage( { -verbose => 0 } );
 
 use open IN => ':encoding(rad50)';
-binmode (STDIN, 'encoding(rad50)');
+binmode STDIN, 'encoding(rad50)';
 
 Encode::RAD50->silence_warnings( 1 );
 
-while (<>) {
-    print;
+{
+    local $_ = undef;
+    while (<>) {
+	print;
+    }
 }
 __END__
 
